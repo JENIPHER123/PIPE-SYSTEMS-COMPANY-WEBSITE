@@ -98,7 +98,7 @@ body{
 }
 .cont1{
     color: white;
-   height: 80vh;
+   height: 100vh;
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -116,10 +116,18 @@ body{
 }
 .btn1{
     border: solid 0.05px rgb(236, 29, 38);
-   font-weight: bold;
-    width: 40%;
-    color:rgba(4, 18, 39, 0.7);
-  
+    font-weight: bold;
+    width: 50%;
+}
+.btn2{
+    border: solid 0.05px rgb(236, 29, 38);
+    font-weight: bold;
+    width: 100%;
+}
+.btn3{
+    border: solid 0.05px rgb(253, 250, 250);
+    margin-right: 10px;
+    width: 100%;
 }
 .p-15{
     padding-top: 5%;
