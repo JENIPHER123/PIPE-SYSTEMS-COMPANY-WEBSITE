@@ -109,7 +109,11 @@ body{
 }
 .section1{
     background: rgb(0, 0, 19);
-    height: 80vh;
+    height: fit-content;
+}
+.section2{
+    background: rgb(20, 20, 37);
+    height: 90vh;
 }
 .news{
     height: 90vh;
