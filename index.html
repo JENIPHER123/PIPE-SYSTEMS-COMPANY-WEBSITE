@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
@@ -21,13 +22,40 @@
         height: 100%;
       }
   
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      /* Style all font awesome icons */
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      /* Add a hover effect if you want */
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .click{
+            color: #434C59;
+        }
+      .click:hover{
+            color: white;
+            cursor: pointer;
+            
+        }
+      /* Set a specific color for each brand */
+
+      /* Facebook */
+      .fa-facebook {
+        background: #858D98;
+        color: white;
+        border-radius: 50%;
+        height: 5vh;
+        width:5vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
         font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
       }
   
       swiper-container {
@@ -84,7 +112,11 @@
             <nav class="navbar navbar-expand-lg text-light navbar-dark ">
                 <div class="container-fluid">
                     <a class="logo " href="#"><img class="rounded-circle mx-4"src="img/th.jpg" alt=""></a>
+                <div class="cont8 pt-4 mx-4">
                   <a class="navbar-brand font-weight-bold" href="#">GERHARD RODE</a>
+                  <p class="fw-bold">Pipe construction service</p>
+                </div>
+                  
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -117,7 +149,7 @@
                               </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link btn rounded-pill px-5 border-warning" href="#" tabindex="-1" aria-disabled="true ">
+                                <a class="nav-link btn rounded-pill px-4 mx-5 "style="border:solid 1px rgb(236, 29, 38);" href="#" tabindex="-1" aria-disabled="true ">
                                     +254 1203476239
                                 </a>
                               </li>
@@ -134,7 +166,7 @@
                 <div class="col-md-4 d-flex justify-content-center align-items-center text-light "style="font-size:350%;padding-top:-20px;;">
                     <div class="div">
                         Tradition 
-                        + 
+                        <span class="fw-bold  orange">+</span>  
                        <br>
                        Experience
                        <br>
@@ -143,23 +175,39 @@
                   
 
                 </div>
-                <div class="col-md-8" style="background: url('img/weld1.jpg');background-size: cover;">
+                <div class="col-md-8" style="background: url('img/weld1.jpg');background-size: cover; height: fit-content;">
                    
-                   <div class="div  p-2"style='height:40vh;background-color:white;width:50%;margin-top:30%;margin-left:50%;'>
-                    <div class="row">
-                        <div class="col-md-8 p-4 "> 
-                            <h5> We have <span class="orange">over 80 years.</span > of experience in building pipe system</h5>
-                                <br>
+                   <div class="div  "style='height:50vh;background-color:white;width:60%;margin-top:30%;margin-left:35%;'>
+                 
+                          <div class="cont6" style="background: #FFFFFF;">
+                            <div class="quotes  h3 p-5 ">
+                              <div class="cont7 justify-content-center d-flex align-items-center">
+                                <div class="inner-cont1">
+                                  We have over <span class="orange">80 years</span> of experience in building pipe systems.
+                                </div>
+                                <div class="fw-bold">
+                                  <ul> 
+                                    <i class="text-center p-5 ">f</i> 
+                                    <i class="text-center p-5">t</i> 
+                                    <i class=" text-center p-5 ">in</i> 
+                                    <i class=" text-center p-5">tt</i> 
+                                  </ul>
+                                 
+                                </div>
                                 
-                                <span class="h3 ">< </span>
-                                <span class="h3">> </span>
-                            </div>
-                        
-                        <div class="col-md-4 p-5"id="links1"style="font-weight:bold;">
-                            <div class="facebook d-flex justify-content-center align-items-center  "style="border:solid 2px orange; border-radius:50%;width:30px;height:30px;" >f</div><br>
-                            <div class="facebook d-flex justify-content-center align-items-center "style="border:solid 2px orange; border-radius:50%;width:30px;height:30px;" >t</div><br>
-                            <div class="facebook d-flex justify-content-center align-items-center "style="border:solid 2px orange; border-radius:50%;width:30px;height:30px;" >in</div>
-                            
+                              </div>
+                              
+                             
+                              <div class="row "style="color:black;">
+                                
+                                <div class="col-md-4  d-flex justify-content-center align-items-center"style="color:grey;" > 
+                                  <i class="material-icons fw-bold  text-center">arrow_back_ios_new</i> 
+                                  <i class="material-icons fw-bold text-center">arrow_forward_ios_new</i> 
+                                </div>
+                               
+                             
+              
+                          </div>
                            
                         </div>
                     </div>
@@ -181,35 +229,36 @@
 
     <!-- services section -->
     <div class="services bg-blue2 height-fit-content pt-3">
-        <div class="h1 text-light text-center pt-3">Our Services</div>
+        <div class="h1 text-light text-center pt-5">Our Services</div>
         <br>
        
         <div class="row text-light">
             <div class="col-sm-4 pl-5">
-              <i class="material-icons orange text-center pb-5">handyman</i>
+              <i class="material-icons orange text-center pb-5"style="font-size: 10vh;">handyman</i>
               
               <p>Water Pipeline</p>
 
-              <div class="btn border-secondary text-light rounded-circle " >></div>
+              <div class="btn text-light" ><a href="#" class="btn "><i class="material-icons  " style=" color:rgb(250, 247, 247); width: 100%;font-size: 6vh;">arrow_circle_right</i></a></div>
             </div>
-            <div class="col-sm-4"><i class="material-icons orange pb-5">landscape</i> <p>Gas Pipeline</p>
+            <div class="col-sm-4"><i class="material-icons orange pb-5" style="font-size: 10vh;">landscape</i> <p>Gas Pipeline</p>
 
-              <div class="btn border-secondary text-light rounded-circle " >></div></div>
-            <div class="col-sm-4"><i class="material-icons orange pb-5">transform </i><p>Warmth Pipeline</p>
+              <div class="btn text-light" ><a href="#" class="btn "><i class="material-icons  " style=" color:rgb(250, 247, 247); width: 100%;font-size: 6vh;">arrow_circle_right</i></a></div></div>
+            <div class="col-sm-4"><i class="material-icons orange pb-5"style="font-size: 10vh;">transform </i><p>Warmth Pipeline</p>
 
-              <div class="btn border-secondary text-light rounded-circle " >></div></i></div>
+             
+            <div class="btn text-light" ><a href="#" class="btn "><i class="material-icons  " style=" color:rgb(250, 247, 247); width: 100%;font-size: 6vh;">arrow_circle_right</i></a></div></div>
         </div>
        
         <div class="row  text-light ">
-          <div class="col-sm-4 col4"><i class="material-icons orange pb-5">grain</i> <p>Plant Construction</p>
+          <div class="col-sm-4 col4"><i class="material-icons orange pb-5"style="font-size: 10vh;">double_arrow</i> <p>Plant Construction</p>
 
-            <div class="btn border-secondary text-light rounded-circle " >></div></div>
-          <div class="col-sm-4 col4"><i class="material-icons orange pb-5">build</i> <p>Cable Construction</p>
+           
+            <div class="btn text-light" ><a href="#" class="btn "><i class="material-icons  " style=" color:rgb(250, 247, 247); width: 100%;font-size: 6vh;">arrow_circle_right</i></a></div></div>
+          <div class="col-sm-4 col4"><i class="material-icons orange pb-5"style="font-size: 10vh;">build</i> <p>Cable Construction</p>
+            <div class="btn text-light" ><a href="#" class="btn "><i class="material-icons  " style=" color:rgb(250, 247, 247); width: 100%;font-size: 6vh;">arrow_circle_right</i></a></div></div>
+          <div class="col-sm-4 col4"><i class="material-icons orange pb-4"style="font-size: 10vh;">support</i> <p>Civil engineering/ <br> special projects</p>
 
-            <div class="btn border-secondary text-light rounded-circle " >></div></div>
-          <div class="col-sm-4 col4"><i class="material-icons orange pb-5">support</i> <p>Civil engineering/ <br> special projects</p>
-
-            <div class="btn border-secondary text-light rounded-circle " >></div></div>
+            <div class="btn text-light" ><a href="#" class="btn "><i class="material-icons  " style=" color:rgb(250, 247, 247); width: 100%;font-size: 6vh;">arrow_circle_right</i></a></div></div>
         </div> 
        
 
@@ -223,15 +272,15 @@
     <!-- about us section -->
     <div class="about">
       <div class="row ">
-        <div class="col-sm-6 bg-blue2 height-100 d-flex justify-content-center align-items-center p-5">
-          <div class="cont1 p-4">
-           <div class="h1 pb-5 ">Experience Confirmed by certificates</div>
-           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam enim officiis quia. Optio, dolorem cum. Sapiente nihil omnis, fugiat sed nulla fuga repellendus tempora iure deserunt dicta, debitis quos itaque!</p>
+        <div class="col-sm-6 bg-blue2 height-fit-content d-flex justify-content-center align-items-center p-5">
+          <div class="cont1 p-4 ">
+           <div class="h1 pb-5 pt-5 mt-5">Experience Confirmed by certificates</div>
+           <p class="py-5" style="width: 60%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam enim officiis quia. Optio, dolorem cum. Sapiente nihil omnis, fugiat sed nulla fuga repellendus tempora iure deserunt dicta, debitis quos itaque!</p>
            <div class="rounded-pill mt-5 px-5 py-3 font-weight-bold btn1 "> → SEE MORE</div>  
           </div>
         </div>
-        <div class="col-sm-6 bg-light height-100 pl-5 p-15">
-          <div class="row  ">
+        <div class="col-sm-6 bg-light height-fit-content  pl-5 p-15">
+          <div class="row  pt-5">
             <div class="col-sm-7  facebook d-flex justify-content-center align-items-center"><p class="px-3" style="color: rgb(184, 195, 204);
             ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, possimus?</p>
              </div>
@@ -241,7 +290,24 @@
                 " >keyboard_arrow_up</i></div><br>
             </div>
            </div>
-          
+           <div class="row pb-4">
+            <div class="col-sm-7  facebook d-flex justify-content-center align-items-center"><p class="px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, possimus?</p></div>
+            <div class="col-sm-5">
+              <div class="facebook  d-flex justify-content-center align-items-center  "><i class="material-icons orange p-2" style="border:solid 1px rgb(236, 29, 38); border-radius:50%;">download</i></div><br>
+            </div>
+           </div>
+         <div class="row pb-4">
+          <div class="col-sm-7  facebook d-flex justify-content-center align-items-center"><p class="px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, possimus?</p></div>
+          <div class="col-sm-5">
+            <div class="facebook  d-flex justify-content-center align-items-center  "><i class="material-icons orange p-2" style="border:solid 1px rgb(236, 29, 38); border-radius:50%;">download</i></div><br>
+          </div>
+         </div>
+         <div class="row pb-4">
+          <div class="col-sm-7  facebook d-flex justify-content-center align-items-center"><p class="px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, possimus?</p></div>
+          <div class="col-sm-5">
+            <div class="facebook  d-flex justify-content-center align-items-center  "><i class="material-icons orange p-2" style="border:solid 1px rgb(236, 29, 38); border-radius:50%;">download</i></div><br>
+          </div>
+         </div>
          <div class="row pb-4">
           <div class="col-sm-7  facebook d-flex justify-content-center align-items-center"><p class="px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, possimus?</p></div>
           <div class="col-sm-5">
@@ -280,14 +346,16 @@
     <div class="hiring">
 
         <div class="row py-5">
-          <div class="col-md-6 p-5 ">
+          <div class="col-md-1"></div>
+          <div class="col-md-5 p-5 ">
             <h1 class="fw-bold mt-5 mb-5">We are a competent partner with family tradition.</h1>
-            <p class="py-5 pr-5 pt-5 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab et magni eos asperiores quidem debitis cumque sint ullam? Voluptas, ullam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab et magni eos asperiores quidem debitis cumque sint ullam? Voluptas, ullam.</p> <div class="rounded-pill  px-5 py-3 font-weight-bold btn1 ">→ READ MORE</div>  
+            <p class="py-5 pr-5 pt-5 text-secondary">For more than 80 years, our family business has specialized in pipe and cable line construction as well as civil engineering.With more than 200 employees.We create high quality pipe systems for supply and disposa;l and are active in industrial and plant construction, as well as in the field of gas pressure control and measuring systems.</p> <div class="rounded-pill  px-5 py-2 fw-bold btn1 ">→ READ MORE</div>  
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class=" orange pt-5 fw-bold px-5" style="font-size: 300%;">80 +</div><div class="h6 fw-bold px-5">Years of experience</div> <div class="h6 fw-bold px-5 ">and tradition.</div><hr> 
-            <div class=" orange pt-3 fw-bold px-5" style="font-size: 300%;">200 +</div><div class="h6 fw-bold px-5">Employees</div>  <div class="h6 fw-bold py-2 "></div> <hr>
-            <div class=" orange pt-2 fw-bold px-5" style="font-size: 300%;">4 +</div><div class="h6 fw-bold px-5">Active Offices</div> <div class="h6 fw-bold px-5 "></div> 
+            <div class=" orange pt-4 fw-bold px-5" style="font-size: 300%;">200 +</div><div class="h6 fw-bold px-5">Employees</div>  <div class="h6 fw-bold py-2 "></div> <hr>
+            <div class=" orange pt-4 fw-bold px-5" style="font-size: 300%;">4 +</div><div class="h6 fw-bold px-5">Active Offices</div> <div class="h6 fw-bold px-5 "></div> 
+            <div class="col-md-2"></div>
           </div>
         </div>
     </div>
@@ -296,7 +364,7 @@
 
       <!-- news section -->
       <div class="trasted-by">
-        <div class="h3 text-center">Trusted by</div>
+        <div class="h3 text-center fw-bold">Trusted by</div>
         <div class="width-100 d-flex justify-content-center align-items-center py-5">
           <img src="img/logos2.PNG"style="width:90%;" alt="">
         </div>
@@ -309,27 +377,27 @@
         
      
 
-      <div class="carousel1" style="background: url('img/worker1.jpg');height: fit-content; width: 100%;background-size: cover;background-position: center;">
-        <div class="cont3"style="background-color:rgba(1, 6, 14, 0.7);height: fit-content; width: 100%;background-size: cover;background-position: center;">
+      <div class="carousel1 " style="background: url('img/worker2.jpg');height: fit-content; width: 100%;background-size: cover;background-position: center;">
+        <div class="cont3"style="background-color: rgba(4, 13, 27, 0.7);height: fit-content; width: 100%;background-size: cover;background-position: center;">
 
-          <div class="row">
-            <div class="col-md-6 d-flex justify-content-center align-items-center height-100">
+          <div class="row pt-5">
+            <div class="col-md-6 d-flex justify-content-center align-items-center height-50">
               <div class="cont5">
                 <div class="h1 text-light">We're hiring</div>
-                <div class="rounded-pill mt-5 px-5 py-3 font-weight-bold btn2 text-light"> → SEE MORE</div>  
+                <div class="rounded-pill  px-5 py-3 font-weight-bold btn2 text-light"> → SEE MORE</div>  
               </div>
              
             </div>
-            <div class="col-md-6 d-flex justify-content-center px-5 mr-5 p align-items-center height-100 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae eveniet praesentium commodi esse cumque facere natus quam maiores, dolorem unde quod reprehenderit, et molestiae sed voluptas velit cupiditate veritatis ab error. Minima at culpa fugit esse! Illum architecto repellat temporibus, mollitia reprehenderit tenetur laborum sequi deserunt nulla, sunt odio.</div>
+            <div class="col-md-6 d-flex justify-content-center px-5 mr-5 p align-items-center height-50 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae eveniet praesentium commodi esse cumque facere natus quam maiores, dolorem unde quod reprehenderit, et molestiae sed voluptas velit cupiditate veritatis ab error. Minima at culpa fugit esse! Illum architecto repellat temporibus, mollitia reprehenderit tenetur laborum sequi deserunt nulla, sunt odio.</div>
           </div>
               
-          <div class="row pb-3">
+          <div class="row p-3 ">
             <div class="col-sm-2"></div>
             <div class="col-sm-2"></div>
             <div class="col-sm-2"></div>
             <div class="col-sm-2"></div>
-            <div class="col-sm-2  d-flex justify-content-right  align-items-right"> <div class="rounded-pill   py-3 fw-bold text-center btn3 text-dark bg-light"> → See More</div>  </div>
-            <div class="col-sm-2 d-flex justify-content-center align-items-center"> <div class="rounded-pill   py-3 fw-bold text-center btn3 text-light"> → See More</div>  </div>
+            <div class="col-sm-2  d-flex justify-content-right  align-items-right"> <div class="rounded-pill   py-3 fw-bold text-center btn3 text-dark bg-light"> See More</div>  </div>
+            <div class="col-sm-2 d-flex justify-content-center align-items-center"> <div class="rounded-pill   py-3 fw-bold text-center btn3 text-light"> See More</div>  </div>
           </div>
 
           <div class="slider py-5">
@@ -359,22 +427,48 @@
      </div>
 
       <!-- news section -->
-      <div class="expect" style="background-color: #00030a;">
-        <div class="title1 h1 text-light fw-bold ml-5 px-5 py-3">What to expect</div>
+      <div class="expect pt-5" style="background-color: #010A19;">
+       
+        <div class="row px-3">
+          
+          <div class="col-md-12 "> <div class="title1 h1 text-light fw-bold mx-5 px-5 ">What to expect</div>
+            </div></div>
 
-        <div class="row">
+        <div class="row p-5">
+          
           <div class="col-md-4 p-5">
-            <i class="material-icons orange px-5 pb-3">support</i> <p class="text-light px-5 -y-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, placeat?</p>
+            
+            <i class="material-icons orange text-center px-5 pb-3">hive</i> <p class="text-light px-5 -y-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, placeat?</p>
             <br>
-          <i class="material-icons orange px-5 pb-3">support</i> <p class="text-light px-5 -y-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, placeat?</p>
-          <div class=" d-flex justify-content-center align-items-center mx-5 mt-5"> <div class="rounded-pill   py-3 fw-bold text-center btn3 text-light"> → See More</div>  </div>
+          <i class="material-icons orange text-center px-5 pb-5">webhook</i> <p class="text-light px-5 -y-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, placeat?</p>
+          <div class=" d-flex justify-content-center align-items-center  mt-5"> <div class="rounded-pill   px-5 fw-bold text-center "style="border:rgb(136, 24, 24)  solid 0.5px;"> <a href="#" class="btn "><i class="material-icons  " style=" color:rgb(245, 243, 243); width: 100%;">arrow_right_alt</i></a> <span class="text-light ">See More</span> </div>  </div>
         </div>
           <div class="col-md-4 p-5">
-            <i class="material-icons orange px-5 pb-3">build</i> <p class="text-light px-5 -y-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, placeat?</p>
+            <i class="material-icons orange text-center px-5 pb-3">workplace_premium</i> <p class="text-light px-5 -y-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, placeat?</p>
             <br>
-          <i class="material-icons orange px-5 pb-3">support</i> <p class="text-light px-5 -y-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, placeat?</p></div>
-          <div class="col-md-4 p-5">
-            <div class="cont6" style="background: rgba(87, 87, 88, 0.7);">
+          <i class="material-icons orange text-center px-5 pb-3">clean_hands</i> <p class="text-light px-5 -y-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, placeat?</p></div>
+          <div class="col-md-4  p-4">
+            <div class="cont6" style="background: #1C2532;">
+              <div class="quotes">
+                <i class="material-icons orange text-center px-5 pt-5 "style="font-size:300%;">format_quote</i> 
+                <div class="message p-5" style="color: rgb(160, 156, 156);">Your company is truly upstanding and is behind the product 100%. It's the perfect solution for our business. It has really helped our business.</div>
+                <div class="lowertext px-5 " style="color: rgb(116, 115, 115);">Jenipher A. Onyango <span class="orange"> * </span> Senior Engineer</div>
+                <div class="row p-4"style="color: rgb(241, 238, 238);">
+                  <div class="col-md-2">
+
+                  </div>
+                  <div class="col-md-4  d-flex justify-content-center align-items-center"> 
+                    <i class="material-icons  text-center">arrow_back_ios_new</i> 
+                    <i class="material-icons text-center">arrow_forward_ios_new</i> 
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <i class="text-center px-3 ">f</i> 
+                    <i class="text-center px-3">t</i> 
+                    <i class=" text-center px-3 ">in</i> 
+                    <i class=" text-center px-">tt</i> 
+                  </div>
+                </div>
+              </div>
 
             </div>
           </div>
@@ -388,40 +482,40 @@
     <div class="news">
        <div class="title">
         <div class="row">
-          <div class="col-md-3 h3 fw-bold p-5">Latest news</div>
+          <div class="col-md-3 h1 fw-bold p-5" style="font-family: cursive;">Latest news</div>
           <div class="col-md-3"></div>
           <div class="col-md-3"></div>
-          <div class="col-md-3"> <div class=" d-flex justify-content-center align-items-center mx-5 mt-5"> <div class="rounded-pill  py-2 px-5 fw-bold text-center "style="border:grey solid 0.5px;"> → See More</div>  </div></div>
+          <div class="col-md-3"> <div class=" d-flex justify-content-center align-items-center  my-5"> <div class="rounded-pill   px-5 fw-bold text-center "style="border:grey solid 0.5px;"> <a href="#" class="btn "><i class="material-icons  " style=" color:rgb(94, 43, 43); width: 100%;">arrow_right</i></a> See More</div>  </div></div>
         </div>
        </div>
 
        <div class="newsbody">
           <div class="row mx-4">
             <div class="col-md-4 p-4 ">
-              <div class="card" style="width: 18rem;border: none;">
-              <img class="card-img-top" src="img/worker.jpg" alt="Card image cap">
+              <div class="card cardup" style="width: 18rem;border: none;">
+              <img class="card-img-top" src="img/worker2.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title fw-bold" style="color: rgb(236, 29, 38); ">Card title</h5>
-                <p class="card-text fw-bold">Card Content</p><br>
-                <a href="#" class="btn "><i class="material-icons orange p-2" style="border:solid 1px rgb(236, 29, 38); border-radius:50%;">download</i></a>
+                <p class="card-text fw-bold">Card Content</p><br><br><br>
+                <a href="#" class="btn "><i class="material-icons  " style=" color:rgb(94, 43, 43); width: 100%;font-size: 6vh;">arrow_circle_right</i></a>
               </div>
             </div></div>
             <div class="col-md-4 p-4 ">
-              <div class="card" style="width: 18rem;border: none;">
-              <img class="card-img-top" src="img/worker.jpg" alt="Card image cap">
+              <div class="card cardup" style="width: 18rem;border: none;">
+              <img class="card-img-top" src="img/worker3.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title fw-bold" style="color: rgb(236, 29, 38); ">Card title</h5>
-                <p class="card-text fw-bold">Some quick example text </p><br>
-                <a href="#" class="btn "><i class="material-icons orange p-2" style="border:solid 1px rgb(236, 29, 38); border-radius:50%;">download</i></a>
+                <p class="card-text fw-bold">Some quick example text </p><br><br><br>
+                <a href="#" class="btn "><i class="material-icons  " style=" color:rgb(94, 43, 43); width: 100%;font-size: 6vh;">arrow_circle_right</i></a>
               </div>
             </div></div>
             <div class="col-md-4 p-4 ">
-              <div class="card" style="width: 18rem;border: none;">
-              <img class="card-img-top" src="img/worker.jpg" alt="Card image cap">
+              <div class="card cardup" style="width: 18rem;border: none;">
+              <img class="card-img-top" src="img/worker4.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title fw-bold" style="color: rgb(236, 29, 38); ">Card title</h5>
-                <p class="card-text fw-bold">Some quick example text to build on the card title </p>
-                <a href="#" class="btn "><i class="material-icons orange p-2" style="border:solid 1px rgb(236, 29, 38); border-radius:50%;">download</i></a>
+                <p class="card-text fw-bold pt-2">Some quick example text to build on the card title </p><br><br>
+                <a href="#" class="btn "><i class="material-icons  " style=" color:rgb(94, 43, 43);font-size: 6vh;">arrow_circle_right</i></a>
               </div>
             </div></div>
           </div>
@@ -437,83 +531,143 @@
     <div class="footer">
       <div class="section1" style="
       height: fit-content;">
-        <div class="titletop text-light h1 fw-bold p-5 ">Our Offices</div>
+        
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-6 d-flex justify-content-center align-items-center">
             <div class="row">
-              <div class="col-md-6 -2">
-                <div class="cont7 p-5">
-                  <div class="p h6 fw-bold"style="color:  rgb(236, 29, 38); ">TRIAL TEXT AREA</div>
-                  <div class="p h6 fw-bold text-light">TRIAL TEXT AREA</div>
-                  <div class="p h6 text-light ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eveniet?</div>
+             
+              <div class="col-md-6 p-4">
+                
+                <div class="cont7 ">
+                  
+                 
+                  <div class="p h6 text-light ">
+                    <ul style="list-style-type: none;">
+                      <li> <div class="titletop text-light h2 fw-bold py-5 " style="font-family: cursive;">Our Offices</div></li>
+                    <li><div class="p  fw-bold"style="color:  #721321; ">NAITOBI IN KENYA</div></li><br>
+                    <li> <div class="p h6 fw-bold text-light">Garhard Rode Enterprise <br>Gombh & Co. Ta</div></li>
+                    <li class="py-2 click" >Scheebrokamp2 <br>48159 Monster</li>
+                    <li class="py-2 click" >
+                      Tel: 0251-552-370
+                      Fax: 0251-552-370
+                      pipecumpany@gmail.com
+                    </li>
+                    
+                    </ul></div>
                 </div>
                 <br> <br>
-                <div class="cont7 p-5">
-                  <div class="p h6 fw-bold"style="color:  rgb(236, 29, 38); ">TRIAL TEXT AREA</div>
-                  <div class="p h6 fw-bold text-light">TRIAL TEXT AREA</div>
-                  <div class="p h6 text-light ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eveniet?</div>
+                <div class="cont7 ">
+                  
+                 
+                  <div class="p h6 text-light ">
+                    <ul style="list-style-type: none;">
+                      <li> <div class="titletop text-light h2 fw-bold " style="font-family:'Times New Roman', Times, serif;"></div></li>
+                    <li><div class="p  fw-bold"style="color:  #721321; ">NAITOBI IN KENYA</div></li><br>
+                    <li> <div class="p h6 fw-bold text-light">Garhard Rode Enterprise <br>Gombh & Co. Ta</div></li>
+                    <li class="py-2 click" >Scheebrokamp2 <br>48159 Monster</li>
+                    <li class="py-2 click" >
+                      Tel: 0251-552-370
+                      Fax: 0251-552-370
+                      pipecumpany@gmail.com
+                    </li>
+                    
+                    </ul></div>
                 </div>
                 
               </div>
-              <div class="col-md-6">
-                <div class="cont7 p-5">
-                  <div class="p h6 fw-bold"style="color:  rgb(236, 29, 38); ">TRIAL TEXT AREA</div>
-                  <div class="p h6 fw-bold text-light">TRIAL TEXT AREA</div>
-                  <div class="p h6 text-light ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eveniet?</div>
+              <div class="col-md-6 mt-4">
+                <div class="cont7 ">
+                  
+                 
+                  <div class="p h6 text-light ">
+                    <ul style="list-style-type: none;">
+                      <li> <div class="titletop text-light h2 fw-bold  py-5" style="font-family:'Times New Roman', Times, serif;"></div></li><br><br>
+                    <li><div class="p  fw-bold"style="color:  #721321; ">NAITOBI IN KENYA</div></li><br>
+                    <li> <div class="p h6 fw-bold text-light">Garhard Rode Enterprise <br>Gombh & Co. Ta</div></li>
+                    <li class="py-2 click" >Scheebrokamp2 <br>48159 Monster</li>
+                    <li class="py-2 click" >
+                      Tel: 0251-552-370
+                      Fax: 0251-552-370
+                      pipecumpany@gmail.com
+                    </li>
+                    
+                    </ul></div>
                 </div>
                 <br> <br>
-                <div class="cont7 p-5">
-                  <div class="p h6 fw-bold"style="color:  rgb(236, 29, 38); ">TRIAL TEXT AREA</div>
-                  <div class="p h6 fw-bold text-light">TRIAL TEXT AREA</div>
-                  <div class="p h6 text-light ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eveniet?</div>
+                <div class="cont7 ">
+                  
+                 
+                  <div class="p h6 text-light ">
+                    <ul style="list-style-type: none;">
+                      <li> <div class="titletop text-light h2 fw-bold  " style="font-family:'Times New Roman', Times, serif;"></div></li>
+                    <li><div class="p  fw-bold"style="color:  #721321; ">NAITOBI IN KENYA</div></li><br>
+                    <li> <div class="p h6 fw-bold text-light">Garhard Rode Enterprise <br>Gombh & Co. Ta</div></li>
+                    <li class="py-2 click" >Scheebrokamp2 <br>48159 Monster</li>
+                    <li class="py-2 click" >
+                      Tel: 0251-552-370
+                      Fax: 0251-552-370
+                      pipecumpany@gmail.com
+                    </li>
+                    
+                    </ul></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            
+          <div class="col-md-6">
+            <img src="img/map1.PNG" alt=""style="width:100%;">
           </div>
         </div>
       </div>
-      <div class="section2 text-light " style="background: rgb(20, 20, 37);
-      height: 90vh;">
-         <div class="row p-5">
-          <div class="col-md-3 ">
-            <a href="#" class="btn "><i class="material-icons orange " style="border:none 1px rgb(236, 29, 38); border-radius:50%;height: 30vh; width: 30vh;font-size: 40vh;">transform</i></a>
+      <div class="section2 text-light p-5" style="background: #1A2330;
+      height: fit-content;">
+         <div class="row p-5 my-5">
+          <div class="col-md-2 ">
+            <a href="#" class="btn "><i class="material-icons orange " style="border:none 1px #E91B23; border-radius:50%;font-size: 20vh;">flaky</i></a>
           </div>
           <div class="col-md-3">
             <ul style="list-style-type: none;">
-              <li class="py-2 fw-bold">Company</li>
-              <li class="py-2">Services</li>
-              <li class="py-2">Project</li>
-              <li class="py-2">About</li>
-              <li class="py-2">News Letter</li>
+              <li class="py-1 h4 fw-bold"style="color:#A8ACB8;">Company</li>
+              <li class="py-1 click">Services</li>
+              <li class="py-1 click">Project</li>
+              <li class="py-1 click">News</li>
+              <li class="py-1 click">Career</li>
+              <li class="py-1 click">About</li>
+              <li class="py-1 click">Contact</li>
             </ul>
           </div>
           <div class="col-md-3">
             <ul style="list-style-type: none;">
-              <li class="py-2 fw-bold">Company</li>
-              <li class="py-2">Services</li>
-              <li class="py-2">Project</li>
-              <li class="py-2">About</li>
-              <li class="py-2">News Letter</li>
-              <li class="py-2">Services</li>
-              <li class="py-2">Project</li>
-              <li class="py-2">About</li>
-              <li class="py-2">News Letter</li>
+              <li class="py-2 h4 fw-bold"style="color:#A8ACB8;">Services</li>
+              <li class="py-2 click">Water Pipeline</li>
+              <li class="py-2 click">Gas Pipeline</li>
+              <li class="py-2 click">Warmth Pipeline</li>
+              <li class="py-2 click">Plant Constraction</li>
+              <li class="py-2 click">Cable Constraction</li>
+              <li class="py-2 click">Civil Engineering / Special Processes</li>
+             
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <ul style="list-style-type: none;">
-            <li class="py-2 h4 fw-bold">Welcome to our Company</li>
-            <li class="py-2">Project</li>
-            <li class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cupiditate inventore eaque numquam vero repellat sequi nesciunt fugit amet adipisci.</li>
-            <li class="py-2">News Letter</li>
+            <li class="py-2 h4 fw-bold"style="color:#A8ACB8;">Grehard Roda Rohrieitungsbgu</li>
+            <li class="py-2 click" >Scheebrokamp2 <br>48159 Monster</li>
+            <li class="py-2 click" >
+              Tel: 0251-552-370
+              Fax: 0251-552-370
+              pipecumpany@gmail.com
+            </li>
+            <li class="py-2"><a href="#" class="fa fa-facebook"></a></li>
             </ul>
           </div>
          </div>
          <hr> 
-         <div class="copyright px-5 py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quaerat.</div>
+         <div class="row">
+          <div class="col-md-4 click"><div class="copyright px-5 py-2">@2022 pipecump project: All rights reserved.</div></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4 click">Website <span class="px-5 click">Project By</span>   Jenipher.A.Onyango</div>
+         </div>
+         
       </div>
        
     </div>

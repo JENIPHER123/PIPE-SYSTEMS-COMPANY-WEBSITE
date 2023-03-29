@@ -3,6 +3,7 @@ body{
     padding: 0;
     overflow-x: hidden;
     margin: 0;
+    font-family: serif;
 }
 .font-12{
     font-size: 12px;
@@ -106,18 +107,25 @@ body{
 .cont6{
     width: 100%;
     height: 100%;
+    color: rgb(92, 87, 87);
+   
 }
 .section1{
-    background: rgb(0, 0, 19);
-    height: fit-content;
+    background: #010A19;
+    height: 100vh;
 }
 .section2{
     background: rgb(20, 20, 37);
     height: 90vh;
 }
 .news{
-    height: 90vh;
-    background: white;
+    height: fit-content;
+    background: rgb(248, 245, 245);
+}
+.cardup:hover{
+    transition: 1s ease-in-out;
+    cursor: pointer;
+    margin-top: -20%;
 }
 .col-sm-4{
     border-top: solid 0.0005px rgb(43, 43, 63);
@@ -154,6 +162,7 @@ body{
 .bottomborder{
     border-bottom: solid 0.0005px rgb(43, 43, 63);
 }
+
 @media only screen and (max-width: 800px) {
     #links1 {
         display: none;
